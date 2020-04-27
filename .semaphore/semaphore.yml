@@ -1,0 +1,14 @@
+version: v1.0
+name: Make-libimage
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Make-libimage
+    task:
+      jobs:
+      - name: MAKE
+        commands:
+          - checkout
+          - source ./libimage-quickse
